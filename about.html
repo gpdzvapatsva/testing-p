@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        body{display: grid;
+        grid-template-areas: 
+        "header header header"
+        "nav section aside"
+        "footer footer footer";
+        grid-template-columns: 80px, 1fr, 50px;
+        grid-template-rows: 15% 1fr 15%;
+        grid-gap:5px;
+        height:100vh;
+        margin:5px;
+        }
+header{grid-area: header;
+background-color: red;}
+nav{grid-area: nav;
+background-color: aqua;
+}
+aside{grid-area:aside;
+background-color: blue;}
+section{
+    grid-area: section;
+    background-color:chartreuse;
+}
+footer{
+    grid-area:footer;
+    background-color: darksalmon;
+}
+header, nav, section, aside, footer {
+	padding: 5px;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>head</header>
+    <nav>nav</nav>
+    <section>section</section>
+    <aside>aside</aside>
+    <footer></footer>
+</body>
+</html>
